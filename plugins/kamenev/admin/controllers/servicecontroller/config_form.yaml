@@ -1,0 +1,11 @@
+name: ServiceController
+modelClass: Kamenev\Admin\Models\Service
+form: $/kamenev/admin/models/service/fields.yaml
+defaultRedirect: kamenev/admin/servicecontroller
+create:
+    redirect: 'kamenev/admin/servicecontroller/update/:id'
+    redirectClose: kamenev/admin/servicecontroller
+update:
+    redirect: kamenev/admin/servicecontroller
+    redirectClose: kamenev/admin/servicecontroller
+preview: {  }

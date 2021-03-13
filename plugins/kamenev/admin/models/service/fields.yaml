@@ -1,0 +1,45 @@
+fields:
+    title:
+        label: 'kamenev.admin::lang.admin.title'
+        span: auto
+        type: text
+    category:
+        label: 'kamenev.admin::lang.admin.category'
+        span: auto
+        type: text
+    desc:
+        label: 'kamenev.admin::lang.admin.desc'
+        size: ''
+        span: left
+        type: richeditor
+    order:
+        label: 'kamenev.admin::lang.admin.order'
+        span: auto
+        type: number
+    image_1:
+        label: 'kamenev.admin::lang.admin.image'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    image_2:
+        label: 'kamenev.admin::lang.admin.image'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    image_3:
+        label: 'kamenev.admin::lang.admin.image'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload

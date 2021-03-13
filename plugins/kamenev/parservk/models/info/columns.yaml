@@ -1,0 +1,10 @@
+columns:
+    client_id:
+        label: 'kamenev.parservk::lang.parsevk.clientID'
+        type: text
+    name:
+        label: 'kamenev.parservk::lang.parsevk.name'
+        type: text
+    count_posts:
+        label: 'kamenev.parservk::lang.parsevk.count_posts'
+        type: number

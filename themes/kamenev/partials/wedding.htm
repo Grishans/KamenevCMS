@@ -1,0 +1,43 @@
+[builderList serviceList]
+modelClass = "Kamenev\Admin\Models\Service"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "desc"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "order"
+sortDirection = "asc"
+==
+{% set services = serviceList.records %}
+<section class="wedding section">
+    <div class="container">
+        <div class="wedding__block">
+            <div class="wedding__sl-info slide-arrows">
+                {% for service in services %}
+                    <div class="wedding__sl-text">
+                        <h2>{{ service.title }}</h2>
+                        <p>{{ service.desc|replace({'<p>':'','</p>':''})|raw }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="wedding__sl">
+                {% for service in services %}
+                    <div class="wedding__sl-content">
+                        <div class="img">
+                            <img src="{{ service.image_1.path }}" alt="wedding">
+                        </div>
+                        <div class="img">
+                            <img src="{{ service.image_2.path }}" alt="wedding">
+                        </div>
+                        <div class="img">
+                            <img src="{{ service.image_3.path }}" alt="wedding">
+                        </div>
+                        <h2>{{ service.category }}</h2>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

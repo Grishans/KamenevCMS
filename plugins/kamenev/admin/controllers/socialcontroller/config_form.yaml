@@ -1,0 +1,11 @@
+name: SocialController
+modelClass: Kamenev\Admin\Models\Social
+form: $/kamenev/admin/models/social/fields.yaml
+defaultRedirect: kamenev/admin/socialcontroller
+create:
+    redirect: 'kamenev/admin/socialcontroller/update/:id'
+    redirectClose: kamenev/admin/socialcontroller
+update:
+    redirect: kamenev/admin/socialcontroller
+    redirectClose: kamenev/admin/socialcontroller
+preview: {  }

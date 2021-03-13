@@ -1,0 +1,13 @@
+columns:
+    name_activity:
+        label: 'kamenev.admin::lang.admin.name_activity'
+        type: text
+    quote:
+        label: 'kamenev.admin::lang.admin.quote'
+        type: text
+    phone:
+        label: 'kamenev.admin::lang.admin.phone'
+        type: text
+    email:
+        label: 'kamenev.admin::lang.admin.email'
+        type: text

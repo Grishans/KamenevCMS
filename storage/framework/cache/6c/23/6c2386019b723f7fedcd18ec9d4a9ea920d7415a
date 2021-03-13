@@ -1,0 +1,71 @@
+1615646300a:1:{s:12:"partners.htm";a:6:{s:8:"fileName";s:12:"partners.htm";s:7:"content";s:1656:"[builderList partnerList]
+modelClass = "Kamenev\Admin\Models\Partner"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set partners = partnerList.records %}
+<section class="partners section">
+    <div class="container container-gutter">
+        <h2 class="sub-title">Партнеры</h2>
+        <div class="partners__block">
+            <div class="partners__item partners__item-left">
+                <div class="partners__slider slide-arrows">
+                    {% for partner in partners %}
+                        {% if partner.orientation == 2 %}
+                        <div class="partners__img">
+                            <img src="{{ partner.image.thumb(715, 420, {mode:'auto',quality:75}) }}" alt="partners">
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="partners__item partners__item-right">
+                <div class="partners__slider slide-arrows">
+                    {% for partner in partners %}
+                        {% if partner.orientation == 1 %}
+                            <div class="partners__img partners__img__horizontal">
+                                <img src="{{ partner.image.thumb(225, 420, {mode:'auto',quality:75}) }}" alt="partners">
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1615562916;s:6:"markup";s:1400:"{% set partners = partnerList.records %}
+<section class="partners section">
+    <div class="container container-gutter">
+        <h2 class="sub-title">Партнеры</h2>
+        <div class="partners__block">
+            <div class="partners__item partners__item-left">
+                <div class="partners__slider slide-arrows">
+                    {% for partner in partners %}
+                        {% if partner.orientation == 2 %}
+                        <div class="partners__img">
+                            <img src="{{ partner.image.thumb(715, 420, {mode:'auto',quality:75}) }}" alt="partners">
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="partners__item partners__item-right">
+                <div class="partners__slider slide-arrows">
+                    {% for partner in partners %}
+                        {% if partner.orientation == 1 %}
+                            <div class="partners__img partners__img__horizontal">
+                                <img src="{{ partner.image.thumb(225, 420, {mode:'auto',quality:75}) }}" alt="partners">
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>";s:4:"code";N;s:23:"builderList partnerList";a:8:{s:10:"modelClass";s:28:"Kamenev\Admin\Models\Partner";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

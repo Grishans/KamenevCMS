@@ -1,0 +1,11 @@
+name: DocumentController
+modelClass: Kamenev\Admin\Models\Document
+form: $/kamenev/admin/models/document/fields.yaml
+defaultRedirect: kamenev/admin/documentcontroller
+create:
+    redirect: 'kamenev/admin/documentcontroller/update/:id'
+    redirectClose: kamenev/admin/documentcontroller
+update:
+    redirect: kamenev/admin/documentcontroller
+    redirectClose: kamenev/admin/documentcontroller
+preview: {  }

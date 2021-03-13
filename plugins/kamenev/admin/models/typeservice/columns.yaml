@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: 'kamenev.admin::lang.admin.name_type_service'
+        type: text
+    slug:
+        label: Slug
+        type: text

@@ -1,0 +1,11 @@
+plugin:
+    name: 'kamenev.feedback::lang.plugin.name'
+    description: 'kamenev.feedback::lang.plugin.description'
+    author: kamenev
+    icon: oc-icon-phone
+    homepage: ''
+navigation:
+    mail-info-menu-item:
+        label: 'kamenev.feedback::lang.feedback.mail_info'
+        url: /kamenev/feedback/mailinfocontroller
+        icon: icon-mail-forward

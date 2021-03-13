@@ -1,0 +1,26 @@
+fields:
+    name_activity:
+        label: 'kamenev.admin::lang.admin.name_activity'
+        span: left
+        type: text
+    name:
+        label: 'kamenev.admin::lang.admin.name'
+        span: auto
+        type: text
+    desc:
+        label: 'kamenev.admin::lang.admin.desc'
+        size: ''
+        span: auto
+        type: richeditor
+    phone:
+        label: 'kamenev.admin::lang.admin.phone'
+        span: auto
+        type: text
+    quote:
+        label: 'kamenev.admin::lang.admin.quote'
+        span: auto
+        type: text
+    email:
+        label: 'kamenev.admin::lang.admin.email'
+        span: right
+        type: text

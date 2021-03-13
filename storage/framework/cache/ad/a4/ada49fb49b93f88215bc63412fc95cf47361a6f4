@@ -1,0 +1,59 @@
+1615646300a:1:{s:13:"biography.htm";a:6:{s:8:"fileName";s:13:"biography.htm";s:7:"content";s:1222:"[builderList biographyList]
+modelClass = "Kamenev\Admin\Models\Biography"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set biography = biographyList.records %}
+<section class="biography section">
+    <div class="container-gutter">
+        <div class="biography__block">
+            <div class="biography__item">
+                <div class="biography__img">
+                    <div class="biography__info">
+                        <h2>Цитата - классная</h2>
+                        <p>Ivan Kamenev</p>
+                    </div>
+                </div>
+            </div>
+            <div class="biography__item biography__item-bio">
+                <div class="biography__bio">
+                    <h2>{{ biography[0].title }}</h2>
+                    <div class="biography__slider slide-arrows">
+                        {% for item in biography %}
+                            {{ item.desc|raw }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1614525919;s:6:"markup";s:961:"{% set biography = biographyList.records %}
+<section class="biography section">
+    <div class="container-gutter">
+        <div class="biography__block">
+            <div class="biography__item">
+                <div class="biography__img">
+                    <div class="biography__info">
+                        <h2>Цитата - классная</h2>
+                        <p>Ivan Kamenev</p>
+                    </div>
+                </div>
+            </div>
+            <div class="biography__item biography__item-bio">
+                <div class="biography__bio">
+                    <h2>{{ biography[0].title }}</h2>
+                    <div class="biography__slider slide-arrows">
+                        {% for item in biography %}
+                            {{ item.desc|raw }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>";s:4:"code";N;s:25:"builderList biographyList";a:8:{s:10:"modelClass";s:30:"Kamenev\Admin\Models\Biography";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

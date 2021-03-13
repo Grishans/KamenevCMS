@@ -1,0 +1,11 @@
+name: TypeService
+modelClass: Kamenev\Admin\Models\TypeService
+form: $/kamenev/admin/models/typeservice/fields.yaml
+defaultRedirect: kamenev/admin/typeservice
+create:
+    redirect: 'kamenev/admin/typeservice/update/:id'
+    redirectClose: kamenev/admin/typeservice
+update:
+    redirect: kamenev/admin/typeservice
+    redirectClose: kamenev/admin/typeservice
+preview: {  }

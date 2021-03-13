@@ -1,0 +1,10 @@
+name: MailInfoController
+modelClass: Kamenev\Feedback\Models\MailInfo
+form: $/kamenev/feedback/models/mailinfo/fields.yaml
+defaultRedirect: kamenev/feedback/mailinfocontroller
+create:
+    redirect: 'kamenev/feedback/mailinfocontroller/update/:id'
+    redirectClose: kamenev/feedback/mailinfocontroller
+update:
+    redirect: kamenev/feedback/mailinfocontroller
+    redirectClose: kamenev/feedback/mailinfocontroller

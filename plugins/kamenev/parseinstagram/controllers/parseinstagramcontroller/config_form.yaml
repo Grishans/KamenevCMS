@@ -1,0 +1,11 @@
+name: ParseInstagramController
+modelClass: Kamenev\Parseinstagram\Models\ParseInstagram
+form: $/kamenev/parseinstagram/models/parseinstagram/fields.yaml
+defaultRedirect: kamenev/parseinstagram/parseinstagramcontroller
+create:
+    redirect: 'kamenev/parseinstagram/parseinstagramcontroller/update/:id'
+    redirectClose: kamenev/parseinstagram/parseinstagramcontroller
+update:
+    redirect: kamenev/parseinstagram/parseinstagramcontroller
+    redirectClose: kamenev/parseinstagram/parseinstagramcontroller
+preview: {  }

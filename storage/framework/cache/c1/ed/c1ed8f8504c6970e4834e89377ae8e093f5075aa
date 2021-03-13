@@ -1,0 +1,73 @@
+1615646300a:1:{s:11:"wedding.htm";a:6:{s:8:"fileName";s:11:"wedding.htm";s:7:"content";s:1603:"[builderList serviceList]
+modelClass = "Kamenev\Admin\Models\Service"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "desc"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "order"
+sortDirection = "asc"
+==
+{% set services = serviceList.records %}
+<section class="wedding section">
+    <div class="container">
+        <div class="wedding__block">
+            <div class="wedding__sl-info slide-arrows">
+                {% for service in services %}
+                    <div class="wedding__sl-text">
+                        <h2>{{ service.title }}</h2>
+                        <p>{{ service.desc|replace({'<p>':'','</p>':''})|raw }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="wedding__sl">
+                {% for service in services %}
+                    <div class="wedding__sl-content">
+                        <div class="img">
+                            <img src="{{ service.image_1.path }}" alt="wedding">
+                        </div>
+                        <div class="img">
+                            <img src="{{ service.image_2.path }}" alt="wedding">
+                        </div>
+                        <div class="img">
+                            <img src="{{ service.image_3.path }}" alt="wedding">
+                        </div>
+                        <h2>{{ service.category }}</h2>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1615561432;s:6:"markup";s:1302:"{% set services = serviceList.records %}
+<section class="wedding section">
+    <div class="container">
+        <div class="wedding__block">
+            <div class="wedding__sl-info slide-arrows">
+                {% for service in services %}
+                    <div class="wedding__sl-text">
+                        <h2>{{ service.title }}</h2>
+                        <p>{{ service.desc|replace({'<p>':'','</p>':''})|raw }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="wedding__sl">
+                {% for service in services %}
+                    <div class="wedding__sl-content">
+                        <div class="img">
+                            <img src="{{ service.image_1.path }}" alt="wedding">
+                        </div>
+                        <div class="img">
+                            <img src="{{ service.image_2.path }}" alt="wedding">
+                        </div>
+                        <div class="img">
+                            <img src="{{ service.image_3.path }}" alt="wedding">
+                        </div>
+                        <h2>{{ service.category }}</h2>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>";s:4:"code";N;s:23:"builderList serviceList";a:10:{s:10:"modelClass";s:28:"Kamenev\Admin\Models\Service";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"desc";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";s:10:"sortColumn";s:5:"order";s:13:"sortDirection";s:3:"asc";}}}

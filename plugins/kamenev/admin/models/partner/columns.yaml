@@ -1,0 +1,9 @@
+columns:
+    name:
+        label: 'kamenev.admin::lang.admin.partner_name'
+        type: text
+        searchable: true
+        sortable: true
+    url:
+        label: 'kamenev.admin::lang.admin.url_partner'
+        type: text

@@ -1,0 +1,40 @@
+plugin:
+    name: 'kamenev.admin::lang.plugin.name'
+    description: 'kamenev.admin::lang.plugin.description'
+    author: kamenev
+    icon: oc-icon-wrench
+    homepage: ''
+navigation:
+    admin-menu-item:
+        label: 'kamenev.admin::lang.admin.admin'
+        url: /kamenev/admin/maininfocontroller
+        icon: icon-wrench
+        sideMenu:
+            main-info-menu-item:
+                label: 'kamenev.admin::lang.admin.main_info'
+                url: /kamenev/admin/maininfocontroller
+                icon: icon-sitemap
+            type-services-menu-item:
+                label: 'kamenev.admin::lang.admin.type_services'
+                url: /kamenev/admin/typeservice
+                icon: icon-tag
+            services-menu-item:
+                label: 'kamenev.admin::lang.admin.services'
+                url: /kamenev/admin/servicecontroller
+                icon: icon-tags
+            partners-menu-item:
+                label: 'kamenev.admin::lang.admin.partners'
+                url: /kamenev/admin/partnercontroller
+                icon: icon-group
+            biography-menu-item:
+                label: 'kamenev.admin::lang.admin.biography'
+                url: /kamenev/admin/biographycontroller
+                icon: icon-user
+            documents-menu-item:
+                label: 'kamenev.admin::lang.admin.documents'
+                url: /kamenev/admin/documentcontroller
+                icon: icon-sitemap
+            socials-menu-item:
+                label: 'kamenev.admin::lang.admin.socials'
+                url: /kamenev/admin/socialcontroller
+                icon: icon-external-link

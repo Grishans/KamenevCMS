@@ -1,0 +1,17 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table kamenev_feedback_mail_info'
+    - builder_table_create_kamenev_feedback_mail_info.php
+1.0.3:
+    - 'Updated table kamenev_feedback_mail_info'
+    - builder_table_update_kamenev_feedback_mail_info.php
+1.0.4:
+    - 'Updated table kamenev_feedback_mail_info'
+    - builder_table_update_kamenev_feedback_mail_info_2.php
+1.0.5:
+    - 'Updated table kamenev_feedback_mail_info'
+    - builder_table_update_kamenev_feedback_mail_info_3.php
+1.0.6:
+    - 'Updated table kamenev_feedback_mail_info'
+    - builder_table_update_kamenev_feedback_mail_info_4.php

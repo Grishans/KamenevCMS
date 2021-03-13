@@ -1,0 +1,21 @@
+fields:
+    from_name:
+        label: 'kamenev.feedback::lang.feedback.from_name'
+        span: auto
+        type: text
+    from_address:
+        label: 'kamenev.feedback::lang.feedback.from_address'
+        span: left
+        type: text
+    to_name:
+        label: 'kamenev.feedback::lang.feedback.to_name'
+        span: left
+        type: text
+    to_address:
+        label: 'kamenev.feedback::lang.feedback.to_address'
+        span: left
+        type: text
+    subject:
+        label: 'kamenev.feedback::lang.feedback.mail_subject'
+        span: left
+        type: text

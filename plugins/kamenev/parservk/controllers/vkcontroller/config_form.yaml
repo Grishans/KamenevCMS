@@ -1,0 +1,11 @@
+name: VkController
+modelClass: Kamenev\Parservk\Models\Info
+form: $/kamenev/parservk/models/info/fields.yaml
+defaultRedirect: kamenev/parservk/vkcontroller
+create:
+    redirect: 'kamenev/parservk/vkcontroller/update/:id'
+    redirectClose: kamenev/parservk/vkcontroller
+update:
+    redirect: kamenev/parservk/vkcontroller
+    redirectClose: kamenev/parservk/vkcontroller
+preview: {  }

@@ -1,0 +1,109 @@
+1615646300a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:2938:"[builderList mainInfoList]
+modelClass = "Kamenev\Admin\Models\MainInfo"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name_activity"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set mainInfo = mainInfoList.records[0]  %}
+{% set socials = socialList.records %}
+<header class="header section">
+    <div class="leading">
+        <div class="container">
+            <div class="leading__box">
+                <div class="leading__info">
+                    <div class="leading__info-block">
+                        <p class="profession">{{ mainInfo.name_activity }}</p>
+                        <div class="header__mobil">
+                            <h1>Ivan Kamenev</h1>
+                            <img class="mobilManuBTN" src="../../assets/img/nav_mobil.svg" alt="">
+                        </div>
+                        <h1>Ivan Kamenev</h1>
+                        <p class="description">{{ mainInfo.desc|replace({'<p>':'', '</p>':''})|raw }}</b></p>
+                        <a class="message" href="#">
+                            <svg width="40" height="42" viewBox="0 0 40 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 4.42105C0 1.97927 1.98985 0 4.44444 0H22.2222C24.6768 0 26.6667 1.97927 26.6667 4.42105V17.6842C26.6667 20.126 24.6768 22.1053 22.2222 22.1053H15.5556L4.44444 30.9474L6.66667 22.1053H4.44444C1.98985 22.1053 0 20.126 0 17.6842V4.42105Z"
+                                    fill="white" />
+                                <path
+                                    d="M13.3333 28.7368V26.5263H22.2222C26.6667 26.5263 31.1111 24.3158 31.1111 19.8947V11.0526H35.5556C38.0102 11.0526 40 13.0319 40 15.4737V28.7368C40 31.1786 38.0102 33.1579 35.5556 33.1579H33.3333L35.5556 42L24.4444 33.1579H17.7778C15.3232 33.1579 13.3333 31.1786 13.3333 28.7368Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="leading__img"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mobilNavBlock">
+      <div class="mobilNavBlock__list">
+          <img class="mobilCross" src="../../assets/img/mobilCross.svg" alt="">
+          <span>Услуги</span>
+          <span>Партнеры</span>
+          <span>О себе</span>
+          <span>Социальные сети</span>
+          <span>Обратная связь</span>
+        </div>
+        <div class="mobilNavBlock__sn">
+          {% for item in socials %}
+                <a href="{{ item.url }}" class="social__link">
+                  <img src="{{ item.image.path }}">
+                </a>
+        {% endfor %}
+        </div>
+    </div>
+</header>";s:5:"mtime";i:1615644677;s:6:"markup";s:2671:"{% set mainInfo = mainInfoList.records[0]  %}
+{% set socials = socialList.records %}
+<header class="header section">
+    <div class="leading">
+        <div class="container">
+            <div class="leading__box">
+                <div class="leading__info">
+                    <div class="leading__info-block">
+                        <p class="profession">{{ mainInfo.name_activity }}</p>
+                        <div class="header__mobil">
+                            <h1>Ivan Kamenev</h1>
+                            <img class="mobilManuBTN" src="../../assets/img/nav_mobil.svg" alt="">
+                        </div>
+                        <h1>Ivan Kamenev</h1>
+                        <p class="description">{{ mainInfo.desc|replace({'<p>':'', '</p>':''})|raw }}</b></p>
+                        <a class="message" href="#">
+                            <svg width="40" height="42" viewBox="0 0 40 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 4.42105C0 1.97927 1.98985 0 4.44444 0H22.2222C24.6768 0 26.6667 1.97927 26.6667 4.42105V17.6842C26.6667 20.126 24.6768 22.1053 22.2222 22.1053H15.5556L4.44444 30.9474L6.66667 22.1053H4.44444C1.98985 22.1053 0 20.126 0 17.6842V4.42105Z"
+                                    fill="white" />
+                                <path
+                                    d="M13.3333 28.7368V26.5263H22.2222C26.6667 26.5263 31.1111 24.3158 31.1111 19.8947V11.0526H35.5556C38.0102 11.0526 40 13.0319 40 15.4737V28.7368C40 31.1786 38.0102 33.1579 35.5556 33.1579H33.3333L35.5556 42L24.4444 33.1579H17.7778C15.3232 33.1579 13.3333 31.1786 13.3333 28.7368Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="leading__img"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mobilNavBlock">
+      <div class="mobilNavBlock__list">
+          <img class="mobilCross" src="../../assets/img/mobilCross.svg" alt="">
+          <span>Услуги</span>
+          <span>Партнеры</span>
+          <span>О себе</span>
+          <span>Социальные сети</span>
+          <span>Обратная связь</span>
+        </div>
+        <div class="mobilNavBlock__sn">
+          {% for item in socials %}
+                <a href="{{ item.url }}" class="social__link">
+                  <img src="{{ item.image.path }}">
+                </a>
+        {% endfor %}
+        </div>
+    </div>
+</header>";s:4:"code";N;s:24:"builderList mainInfoList";a:8:{s:10:"modelClass";s:29:"Kamenev\Admin\Models\MainInfo";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:13:"name_activity";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -1,0 +1,7 @@
+columns:
+    name_1:
+        label: 'kamenev.admin::lang.admin.document_name'
+        type: text
+    name_2:
+        label: 'kamenev.admin::lang.admin.document_name'
+        type: text

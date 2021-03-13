@@ -1,0 +1,11 @@
+name: PartnerController
+modelClass: Kamenev\Admin\Models\Partner
+form: $/kamenev/admin/models/partner/fields.yaml
+defaultRedirect: kamenev/admin/partnercontroller
+create:
+    redirect: 'kamenev/admin/partnercontroller/update/:id'
+    redirectClose: kamenev/admin/partnercontroller
+update:
+    redirect: kamenev/admin/partnercontroller
+    redirectClose: kamenev/admin/partnercontroller
+preview: {  }

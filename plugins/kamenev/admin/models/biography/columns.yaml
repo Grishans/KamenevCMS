@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: 'kamenev.admin::lang.admin.title'
+        type: text
+        searchable: true
+        sortable: true
+    desc:
+        label: 'kamenev.admin::lang.admin.desc'
+        type: text

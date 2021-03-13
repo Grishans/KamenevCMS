@@ -1,0 +1,19 @@
+fields:
+    name:
+        label: 'kamenev.admin::lang.admin.name_social'
+        span: left
+        type: text
+    url:
+        label: URL
+        span: right
+        type: text
+    image:
+        label: 'kamenev.admin::lang.admin.upload_social_image'
+        mode: image
+        fileTypes: svg
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload

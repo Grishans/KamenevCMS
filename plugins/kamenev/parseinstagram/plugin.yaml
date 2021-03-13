@@ -1,0 +1,11 @@
+plugin:
+    name: 'kamenev.parseinstagram::lang.plugin.name'
+    description: 'kamenev.parseinstagram::lang.plugin.description'
+    author: kamenev
+    icon: oc-icon-instagram
+    homepage: ''
+navigation:
+    parse-inst-menu-item:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.parse_inst'
+        url: /kamenev/parseinstagram/parseinstagramcontroller
+        icon: icon-instagram

@@ -1,0 +1,11 @@
+name: MainInfoController
+modelClass: Kamenev\Admin\Models\MainInfo
+form: $/kamenev/admin/models/maininfo/fields.yaml
+defaultRedirect: kamenev/admin/maininfocontroller
+create:
+    redirect: 'kamenev/admin/maininfocontroller/update/:id'
+    redirectClose: kamenev/admin/maininfocontroller
+update:
+    redirect: kamenev/admin/maininfocontroller
+    redirectClose: kamenev/admin/maininfocontroller
+preview: {  }

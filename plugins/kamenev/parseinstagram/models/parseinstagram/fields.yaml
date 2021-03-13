@@ -1,0 +1,22 @@
+fields:
+    base_url:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.base_url'
+        span: left
+        required: 1
+        type: text
+    refresh_url:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.refresh_url'
+        span: right
+        required: 1
+        type: text
+    count_posts:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.count_posts'
+        span: left
+        required: 1
+        type: number
+    access_token:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.access_token'
+        span: right
+        required: 1
+        type: text
+        commentAbove: 'Токен из кабинета разработчика Facebook'

@@ -1,0 +1,11 @@
+name: BiographyController
+modelClass: Kamenev\Admin\Models\Biography
+form: $/kamenev/admin/models/biography/fields.yaml
+defaultRedirect: kamenev/admin/biographycontroller
+create:
+    redirect: 'kamenev/admin/biographycontroller/update/:id'
+    redirectClose: kamenev/admin/biographycontroller
+update:
+    redirect: kamenev/admin/biographycontroller
+    redirectClose: kamenev/admin/biographycontroller
+preview: {  }

@@ -1,0 +1,35 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ this.page.title }}</title>
+    <link rel="stylesheet" href="{{ 'assets/libs/fullpage.min.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/libs/slick.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/libs/slick-theme.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/style.css'|theme }}">
+    {% styles %}
+</head>
+
+<body>
+
+    {% page %}
+
+
+    <script src="{{ 'assets/libs/fullpage.min.js'|theme }}"></script>
+    <script src="{{ 'assets/libs/jquery-min.js'|theme }}"></script>
+    <script src="{{ 'assets/libs/slick.min.js'|theme }}"  ></script>
+    <script src="{{ 'assets/js/script.js'|theme }}" ></script>
+    <script>
+        window.onload = getInfoFromApi;
+    </script>
+    {% framework extras %}
+    {% scripts %}
+
+
+</body>
+
+</html>

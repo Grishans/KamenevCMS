@@ -1,0 +1,41 @@
+[builderList partnerList]
+modelClass = "Kamenev\Admin\Models\Partner"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set partners = partnerList.records %}
+<section class="partners section">
+    <div class="container container-gutter">
+        <h2 class="sub-title">Партнеры</h2>
+        <div class="partners__block">
+            <div class="partners__item partners__item-left">
+                <div class="partners__slider slide-arrows">
+                    {% for partner in partners %}
+                        {% if partner.orientation == 2 %}
+                        <div class="partners__img">
+                            <img src="{{ partner.image.thumb(715, 420, {mode:'auto',quality:75}) }}" alt="partners">
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="partners__item partners__item-right">
+                <div class="partners__slider slide-arrows">
+                    {% for partner in partners %}
+                        {% if partner.orientation == 1 %}
+                            <div class="partners__img partners__img__horizontal">
+                                <img src="{{ partner.image.thumb(225, 420, {mode:'auto',quality:75}) }}" alt="partners">
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

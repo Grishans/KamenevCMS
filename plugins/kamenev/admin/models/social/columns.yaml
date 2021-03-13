@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: 'kamenev.admin::lang.admin.name_social'
+        type: text
+    url:
+        label: URL
+        type: text

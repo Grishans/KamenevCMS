@@ -1,0 +1,10 @@
+columns:
+    from_name:
+        label: 'kamenev.feedback::lang.feedback.from_name'
+        type: text
+    to_name:
+        label: 'kamenev.feedback::lang.feedback.to_name'
+        type: text
+    to_address:
+        label: 'kamenev.feedback::lang.feedback.to_address'
+        type: text

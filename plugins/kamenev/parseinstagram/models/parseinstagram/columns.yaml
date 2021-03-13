@@ -1,0 +1,10 @@
+columns:
+    base_url:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.base_url'
+        type: text
+    refresh_url:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.base_url'
+        type: text
+    count_posts:
+        label: 'kamenev.parseinstagram::lang.parseinstagram.count_posts'
+        type: number

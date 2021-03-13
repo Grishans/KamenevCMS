@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: 'kamenev.admin::lang.admin.title'
+        span: left
+        type: text
+    desc:
+        label: 'kamenev.admin::lang.admin.desc'
+        size: ''
+        span: left
+        type: richeditor
